@@ -1,17 +1,19 @@
-# Techfix 2.2 — Autoridade e Certificações
+# Techfix 3.0
 
-## Novidades
+Site institucional da **Techfix Soluções Residenciais e Comerciais**.
 
-- Seção “Formação e Qualificações”.
-- Certificados Microsoft, Linux, Novell, IBM e Academia Exact.
-- Galeria em modal: o visitante clica e visualiza o certificado ampliado.
-- Organização por área técnica e comercial.
-- Menu atualizado com acesso direto às certificações.
+## Estrutura
 
-## Publicação
+- `index.html` — página principal
+- `assets/css/styles.css` — identidade visual e responsividade
+- `assets/js/script.js` — menu, formulário do WhatsApp, certificados e animações
+- `assets/certificados/` — imagens das qualificações
+- `assets/img/` — imagens institucionais
+- `docs/` — documentação
+- `backups/` — versões anteriores; não é necessário publicar esta pasta
 
-1. Extraia o ZIP.
-2. No repositório GitHub, use **Add file → Upload files**.
-3. Envie todos os arquivos e a pasta `assets`.
-4. Confirme a substituição.
-5. Clique em **Commit changes**.
+## Publicação rápida no GitHub
+
+Envie para a raiz do repositório: `index.html`, `robots.txt`, `sitemap.xml`, `README.md` e a pasta `assets`.
+
+Antes de publicar, confira em `sitemap.xml` se a URL final do GitHub Pages está correta.
