@@ -19,10 +19,7 @@ document.querySelectorAll("[data-service]").forEach(link => {
   link.addEventListener("click", () => {
     const select = document.getElementById("servico");
     const value = link.dataset.service;
-    if (!select || !value) return;
-
-    const option = Array.from(select.options).find(item => item.text === value);
-    if (option) select.value = value;
+    if (select && value) select.value = value;
   });
 });
 
@@ -48,6 +45,4 @@ document.getElementById("quote-form")?.addEventListener("submit", event => {
 });
 
 const year = document.getElementById("year");
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+if (year) year.textContent = new Date().getFullYear();
