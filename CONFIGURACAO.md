@@ -1,19 +1,15 @@
-# Dados para atualização rápida
+# Configuração rápida — Techfix 2.0
 
-## Telefone atual
-- Exibição: +55 13 99666-0267
-- WhatsApp sem símbolos: 5513996660267
+## Upload no GitHub
 
-## Links atuais
-- Facebook: https://www.facebook.com/profile.php?id=61579730648989
-- Instagram: https://www.instagram.com/techfixtecnologiaeseguranca/
-- E-mail: buschjr@gmail.com
+Use o pacote ZIP gerado e envie os arquivos para a raiz do repositório.
 
-## Área atendida
-- Florianópolis
-- São José
-- Palhoça
-- Biguaçu
+## WhatsApp
 
-## Alteração futura
-Quando o número DDD 48 estiver ativo, procure por `5513996660267` em todos os arquivos e substitua pelo novo número completo.
+Número usado em todos os pontos:
+
+`5513996660267`
+
+## Observação
+
+O site foi preparado para funcionar no GitHub Pages sem build, sem instalação e sem terminal.

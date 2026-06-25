@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5513996660267"; // Troque aqui quando o número com DDD 48 estiver ativo.
+const WHATSAPP_NUMBER = "5513996660267";
 
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
@@ -19,6 +19,8 @@ document.querySelectorAll("[data-service]").forEach(link => {
   link.addEventListener("click", () => {
     const select = document.getElementById("servico");
     const value = link.dataset.service;
+    if (!select || !value) return;
+
     const option = Array.from(select.options).find(item => item.text === value);
     if (option) select.value = value;
   });
@@ -45,4 +47,7 @@ document.getElementById("quote-form")?.addEventListener("submit", event => {
   window.open(url, "_blank", "noopener,noreferrer");
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

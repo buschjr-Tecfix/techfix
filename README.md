@@ -1,40 +1,37 @@
-# Site Techfix Tecnologia e Segurança
+# Techfix 2.0
 
-Site institucional estático, responsivo e pronto para hospedagem gratuita no GitHub Pages.
+Site institucional estático da **Techfix Soluções Residenciais e Comerciais**.
 
-## Antes de publicar
+## O que mudou nesta versão
 
-1. Abra `index.html`, `robots.txt` e `sitemap.xml`.
-2. Substitua `SEU-USUARIO` pelo nome de usuário real do GitHub.
-3. Quando o novo número com DDD 48 estiver ativo:
-   - altere o número visível em `index.html`;
-   - altere todos os links `wa.me`;
-   - altere `WHATSAPP_NUMBER` em `script.js`;
-   - altere o telefone dentro do JSON-LD no topo de `index.html`.
-4. Confira e-mail, Instagram e Facebook.
-5. Quando comprar o domínio, atualize:
-   - `canonical`;
-   - `url` do JSON-LD;
-   - `robots.txt`;
-   - `sitemap.xml`.
+- Visual premium e responsivo.
+- WhatsApp configurado para `5513996660267`.
+- Formulário que monta mensagem e abre direto no WhatsApp.
+- Menu mobile.
+- SEO local básico para Florianópolis e região.
+- JSON-LD de negócio local.
+- Estrutura simples para GitHub Pages.
 
-## Publicação no GitHub Pages
+## Como publicar no GitHub
 
-1. Crie um repositório chamado `techfix`.
-2. Envie todo o conteúdo desta pasta para a raiz do repositório.
-3. No GitHub, abra **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch `main` e a pasta `/root`.
-6. Salve e aguarde a publicação.
+1. Abra o repositório `techfix`.
+2. Clique em **Add file**.
+3. Clique em **Upload files**.
+4. Arraste todos os arquivos desta pasta para o GitHub.
+5. Confirme a substituição dos arquivos existentes.
+6. Clique em **Commit changes**.
 
-O endereço ficará semelhante a:
+## Arquivos principais
 
-`https://SEU-USUARIO.github.io/techfix/`
+- `index.html`: conteúdo, estrutura e SEO.
+- `styles.css`: visual, layout e responsividade.
+- `script.js`: menu mobile e formulário do WhatsApp.
+- `robots.txt`: orientação para buscadores.
+- `sitemap.xml`: mapa do site.
 
-## Estrutura
+## Próximos passos
 
-- `index.html`: conteúdo e SEO
-- `styles.css`: identidade visual e responsividade
-- `script.js`: menu e formulário que abre o WhatsApp
-- `assets/`: imagens otimizadas
-- `robots.txt` e `sitemap.xml`: indexação
+- Trocar o endereço do sitemap quando o GitHub Pages estiver confirmado.
+- Adicionar fotos reais de serviços.
+- Integrar Google Perfil da Empresa.
+- Criar versão com galeria de trabalhos.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SEU-USUARIO.github.io/techfix/sitemap.xml
+Sitemap: https://buschjr-tecfix.github.io/techfix/sitemap.xml
