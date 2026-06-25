@@ -1,14 +1,17 @@
-# Techfix 2.1
+# Techfix 2.2 — Autoridade e Certificações
 
-Ajuste visual da versão 2.0 com foco em:
+## Novidades
 
-- hierarquia visual mais limpa;
-- header mais organizado;
-- hero mais equilibrado;
-- navegação mobile melhor;
-- leitura mais fácil para o visitante;
-- formulário de orçamento mantido.
+- Seção “Formação e Qualificações”.
+- Certificados Microsoft, Linux, Novell, IBM e Academia Exact.
+- Galeria em modal: o visitante clica e visualiza o certificado ampliado.
+- Organização por área técnica e comercial.
+- Menu atualizado com acesso direto às certificações.
 
 ## Publicação
 
-Substitua os arquivos na raiz do repositório GitHub Pages e faça o commit.
+1. Extraia o ZIP.
+2. No repositório GitHub, use **Add file → Upload files**.
+3. Envie todos os arquivos e a pasta `assets`.
+4. Confirme a substituição.
+5. Clique em **Commit changes**.
