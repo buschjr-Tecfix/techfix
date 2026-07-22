@@ -3,3 +3,7 @@ img {
   height: auto;
   display: block;
 }
+.hero-image {
+  max-width: 500px; /* Ou o tamanho desejado */
+  margin: 0 auto;
+}
