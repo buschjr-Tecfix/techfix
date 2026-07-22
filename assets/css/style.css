@@ -7,3 +7,14 @@ img {
   max-width: 500px; /* Ou o tamanho desejado */
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
