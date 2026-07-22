@@ -1,207 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFix - Soluções em Tecnologia e Segurança</title>
-    <style>
-        /* Estilos Globais */
-        :root {
-            --primary-color: #0056b3;
-            --secondary-color: #17a2b8;
-            --dark-color: #1a1a1a;
-            --light-color: #f4f6f9;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--light-color);
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1.2rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        header h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Seção Principal (Hero) */
-        .hero {
-            padding: 5rem 1.5rem;
-            text-align: center;
-            background: linear-gradient(rgba(0,86,179,0.85), rgba(26,26,26,0.85)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 1.5rem auto;
-        }
-
-        /* Container & Cards */
-        .container {
-            max-width: 1100px;
-            margin: 3rem auto;
-            padding: 0 1.5rem;
-            flex: 1;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: var(--primary-color);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 1rem;
-        }
-
-        .card h3 {
-            margin-bottom: 0.5rem;
-            color: var(--dark-color);
-        }
-
-        /* Botão do WhatsApp */
-        .btn-whatsapp {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 0.9rem 1.8rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-            transition: background 0.3s;
-        }
-
-        .btn-whatsapp:hover {
-            background-color: #1eb857;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 4rem;
-        }
-
-        footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfix | Soluções Residenciais e Comerciais</title>
+  <meta name="description" content="Serviços técnicos especializados em CFTV, redes, automação e informática em Florianópolis e região." />
+  <meta name="theme-color" content="#07111f" />
+  <link rel="canonical" href="https://buschjr-tecfix.github.io/techfix/" />
+  
+  <meta property="og:title" content="Techfix | Soluções Técnicas" />
+  <meta property="og:description" content="CFTV, redes, automação e informática com atendimento especializado." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://buschjr-tecfix.github.io/techfix/" />
+  <meta property="og:image" content="https://buschjr-tecfix.github.io/techfix/Logo%20Techfix.png" />
+  
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
-    <header>
-        <h2>TechFix</h2>
-        <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#cftv">CFTV</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Atendimento em Florianópolis e Região Metropolitana</span>
+      <div>
+        <a href="https://wa.me/5513996660267" target="_blank" rel="noopener">WhatsApp: (13) 99666-0267</a>
+      </div>
+    </div>
+  </div>
 
-    <section class="hero">
-        <h1>TechFix Soluções Residenciais e Comerciais</h1>
-        <p>Especialistas em manutenção técnica, automação e sistemas de segurança eletrônica.</p>
-        <a href="https://wa.me/5513996660267" class="btn-whatsapp" target="_blank">Falar no WhatsApp</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <div class="brand-mark">TF</div>
+        <div class="brand-copy">
+          <strong>TECHFIX</strong>
+          <small>Soluções Técnicas</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a href="kit-de-midia.html">Kit de Mídia</a>
+        <a class="nav-cta" href="https://wa.me/5513996660267" target="_blank" rel="noopener">Orçamento Rápido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Agilidade & Segurança</span>
+          <h1>Soluções técnicas para sua casa ou empresa.</h1>
+          <p class="lead">Especialista em instalação e manutenção de CFTV, infraestrutura de redes, automação residencial e suporte em informática com atendimento humanizado.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5513996660267?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-secondary" href="#servicos">Ver Serviços</a>
+          </div>
+          <ul class="trust-list">
+            <li>Garantia nos serviços</li>
+            <li>Suporte dedicado</li>
+            <li>Atendimento local</li>
+          </ul>
+        </div>
+        <div class="hero-panel">
+          <span class="panel-label">Áreas de Atuação</span>
+          <h2>O que podemos resolver hoje?</h2>
+          <div class="solution-list">
+            <div>
+              <span>01</span>
+              <p><strong>Câmeras e Segurança (CFTV)</strong><small>Instalação, configuração e acesso remoto.</small></p>
+            </div>
+            <div>
+              <span>02</span>
+              <p><strong>Redes e Wi-Fi</strong><small>Cabeamento estruturado e otimização de sinal.</small></p>
+            </div>
+            <div>
+              <span>03</span>
+              <p><strong>Informática e Sistemas</strong><small>Manutenção preventiva, formatação e suporte.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <main class="container">
-        <h2 class="section-title">Nossos Serviços</h2>
-        <div class="services-grid" id="servicos">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Assistência Técnica">
-                <div>
-                    <h3>Assistência Técnica e Manutenção</h3>
-                    <p>Manutenção preventiva e corretiva de equipamentos com rapidez, diagnóstico preciso e eficiência.</p>
-                </div>
-            </div>
-            <div class="card" id="cftv">
-                <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80" alt="Sistemas CFTV">
-                <div>
-                    <h3>CFTV e Segurança Eletrônica</h3>
-                    <p>Instalação e configuração de câmeras IP e analógicas HD para controle total da sua residência ou empresa.</p>
-                </div>
-            </div>
+    <section class="section servicos-container" id="servicos">
+      <div class="container">
+        <span class="eyebrow">Especialidades</span>
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">💻</div>
+            <h3>Manutenção de Computadores e Notebooks</h3>
+            <p>Manutenção preventiva e corretiva, otimização de sistema, SSD e suporte técnico especializado para residências e empresas.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Informática" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">🖥️</div>
+            <h3>Montagem de PC Gamer</h3>
+            <p>Montagem personalizada e sob medida com seleção de componentes de alto desempenho e melhor refrigeração.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Informática" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">📹</div>
+            <h3>Instalação de Câmeras e CFTV</h3>
+            <p>Projetos residenciais e comerciais de segurança com monitoramento ao vivo no celular e equipamentos de alta definição.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="CFTV" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">🌐</div>
+            <h3>Redes, Wi-Fi e Cabeamento Estruturado</h3>
+            <p>Cabeamento estruturado organizado, extensão de cobertura Wi-Fi de alta estabilidade para ambientes residenciais e corporativos.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Redes" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">💡</div>
+            <h3>Automação Residencial</h3>
+            <p>Criação de rotinas e cenas, controle de iluminação por voz/celular e integração completa Wi-Fi com lâmpadas inteligentes.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Geral" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">🚀</div>
+            <h3>Presença Digital para Empresas</h3>
+            <p>Organização de perfil no Google Meu Negócio, WhatsApp, Facebook e Instagram para pequenas empresas em Florianópolis e São José.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Geral" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">☁️</div>
+            <h3>Consultoria Cloud & DevOps</h3>
+            <p>Automação, infraestrutura como código (IaC), CI/CD, monitoramento e escalabilidade para ambientes AWS, Azure e GCP.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Geral" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer id="contato">
-        <p>&copy; TechFix Soluções. Todos os direitos reservados.</p>
-        <p>Email: <a href="mailto:buschjr@gmail.com">buschjr@gmail.com</a> | WhatsApp: <a href="https://wa.me/5513996660267" target="_blank">+55 (13) 99666-0267</a></p>
-    </footer>
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="hero-panel" style="max-width: 680px; margin: 0 auto;">
+          <span class="eyebrow">Contato Direto</span>
+          <h2>Envie uma mensagem</h2>
+          <form class="quote-form" id="quote-form" style="display: grid; gap: 16px; margin-top: 24px;">
+            <div>
+              <label for="nome" style="display: block; margin-bottom: 6px; font-weight: 700;">Seu Nome:</label>
+              <input type="text" id="nome" name="nome" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;" />
+            </div>
+            <div>
+              <label for="servico" style="display: block; margin-bottom: 6px; font-weight: 700;">Serviço Desejado:</label>
+              <select id="servico" name="servico" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;">
+                <option value="Geral">Orçamento Geral</option>
+                <option value="CFTV">CFTV / Câmeras</option>
+                <option value="Redes">Redes & Wi-Fi</option>
+                <option value="Informática">Informática</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensagem" style="display: block; margin-bottom: 6px; font-weight: 700;">Detalhes da Solicitação:</label>
+              <textarea id="mensagem" name="mensagem" rows="4" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer" style="border-top: 1px solid var(--line); padding: 48px 0 24px; margin-top: 64px; background: var(--bg2);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px;">
+      
+      <div class="footer-info" style="max-width: 360px;">
+        <h3 style="margin-bottom: 12px; color: #fff;">TechFix Tecnologia e Segurança</h3>
+        <p style="color: var(--muted);">Soluções residenciais e comerciais em TI, infraestrutura, automação e presença digital com atendimento local em Florianópolis/SC.</p>
+      </div>
+
+      <div class="footer-socials">
+        <h4 style="margin-bottom: 12px; color: #fff;">Conecte-se conosco</h4>
+        <div class="social-links" style="display: flex; gap: 16px; margin-bottom: 16px;">
+          <a href="https://www.linkedin.com/company/techfix-solu%C3%A7%C3%B5es-residenciais/" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">LinkedIn</a>
+          <a href="https://www.instagram.com/techfixtecnologiaeseguranca/" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">Instagram</a>
+          <a href="https://www.facebook.com/techfixtecnologiaeseguranca/" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">Facebook</a>
+        </div>
+        <div class="footer-email">
+          <p style="color: var(--muted);">📧 Email: <a href="mailto:contatotechfix01@gmail.com" style="color: #fff;">contatotechfix01@gmail.com</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom" style="text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px;">
+      <p>© <span id="year">2026</span> TechFix Tecnologia e Segurança. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
