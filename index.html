@@ -1,85 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kit de Mídia - Techfix</title>
-  <style>
-    /* Reset e Regra de Ouro para Imagens */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: sans-serif; background: #f4f4f9; color: #333; line-height: 1.6; }
-    
-    /* IMPEDE QUALQUER IMAGEM DE VAZAR NA TELA */
-    img { max-width: 100%; height: auto; display: block; }
-
-    /* Cabeçalho Alinhado */
-    header {
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
-    header nav a { color: #fff; margin-left: 1rem; text-decoration: none; }
-
-    /* Container Principal */
-    .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
-    
-    /* Hero / Capa com Tamanho Limitado */
-    .hero { text-align: center; margin-bottom: 2rem; }
-    .hero img { max-width: 400px; margin: 0 auto 1rem auto; border-radius: 8px; }
-
-    /* Grid de Artes */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-    .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .btn {
-      display: inline-block;
-      background: #007bff;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 0.5rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfix | Soluções Residenciais e Comerciais</title>
+  <meta name="description" content="Serviços técnicos especializados em CFTV, redes, automação e informática em Florianópolis e região." />
+  <meta name="theme-color" content="#07111f" />
+  <link rel="canonical" href="https://buschjr-tecfix.github.io/techfix/" />
+  
+  <meta property="og:title" content="Techfix | Soluções Técnicas" />
+  <meta property="og:description" content="CFTV, redes, automação e informática com atendimento especializado." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://buschjr-tecfix.github.io/techfix/" />
+  <meta property="og:image" content="https://buschjr-tecfix.github.io/techfix/Logo%20Techfix.png" />
+  
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
-  <header>
-    <h2>Techfix</h2>
-    <nav>
-      <a href="#artes">Artes</a>
-      <a href="#orientacoes">Orientações</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <section class="hero">
-      "assets/capa.png"
-      <img src="URL_DA_SUA_IMAGEM_DE_CAPA.png" alt="Kit de Mídia Techfix">
-      <h1>Kit de Mídia - Techfix</h1>
-      <p>Material de divulgação para redes sociais e WhatsApp</p>
-    </section>
-
-    <section id="artes">
-      <h2>Biblioteca Visual</h2>
-      <div class="grid">
-        "assets/cftv.png"
-        <div class="card">
-          <img src="assets/cftv.png" alt="Arte CFTV">
-          <h3>CFTV e Segurança</h3>
-          <a href="URL_DA_ARTE_1.png" download class="btn">Baixar PNG</a>
-        </div>
-        <!-- Repita o .card para as outras artes -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Atendimento em Florianópolis e Região Metropolitana</span>
+      <div>
+        <a href="https://wa.me/5513996660267" target="_blank" rel="noopener">WhatsApp: (13) 99666-0267</a>
       </div>
-    </section>
+    </div>
   </div>
 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <div class="brand-mark">TF</div>
+        <div class="brand-copy">
+          <strong>TECHFIX</strong>
+          <small>Soluções Técnicas</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#certificacoes">Certificações</a>
+        <a href="#contato">Contato</a>
+        <a href="kit-de-midia.html">Kit de Mídia</a>
+        <a class="nav-cta" href="https://wa.me/5513996660267" target="_blank" rel="noopener">Orçamento Rápido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Agilidade & Segurança</span>
+          <h1>Soluções técnicas para sua casa ou empresa.</h1>
+          <p class="lead">Especialista em instalação e manutenção de CFTV, infraestrutura de redes, automação residencial e suporte em informática com atendimento humanizado.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5513996660267?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-secondary" href="#servicos">Ver Serviços</a>
+          </div>
+          <ul class="trust-list">
+            <li>Garantia nos serviços</li>
+            <li>Suporte dedicado</li>
+            <li>Atendimento local</li>
+          </ul>
+        </div>
+        <div class="hero-panel">
+          <span class="panel-label">Áreas de Atuação</span>
+          <h2>O que podemos resolver hoje?</h2>
+          <div class="solution-list">
+            <div>
+              <span>01</span>
+              <p><strong>Câmeras e Segurança (CFTV)</strong><small>Instalação, configuração e acesso remoto.</small></p>
+            </div>
+            <div>
+              <span>02</span>
+              <p><strong>Redes e Wi-Fi</strong><small>Cabeamento estruturado e otimização de sinal.</small></p>
+            </div>
+            <div>
+              <span>03</span>
+              <p><strong>Informática e Sistemas</strong><small>Manutenção preventiva, formatação e suporte.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <span class="eyebrow">Especialidades</span>
+        <h2>Serviços Prestados</h2>
+        <div class="service-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+          <div class="hero-panel">
+            <h3>CFTV & Monitoramento</h3>
+            <p>Projetos de segurança eletrônica com câmeras IP e analógicas HD. Acompanhe em tempo real pelo celular.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="CFTV">Solicitar Orçamento</a>
+          </div>
+          <div class="hero-panel">
+            <h3>Redes & Conectividade</h3>
+            <p>Instalação de pontos de rede, organização de racks, roteadores de alta performance e redes Mesh.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Redes">Solicitar Orçamento</a>
+          </div>
+          <div class="hero-panel">
+            <h3>Informática & Hardware</h3>
+            <p>Diagnóstico de problemas, montagem, limpeza interna, troca de componentes e otimização de sistemas.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Informática">Solicitar Orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certificacoes">
+      <div class="container">
+        <span class="eyebrow">Qualificação</span>
+        <h2>Certificações e Treinamentos</h2>
+        <p class="lead">Garantia de atendimento técnico qualificado e alinhado com as melhores práticas do mercado.</p>
+        
+        <div class="certificate-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px;">
+          <button class="hero-panel" type="button" data-certificate="slide02.jpg" data-title="Certificação Técnica 01" style="text-align: left; cursor: pointer;">
+            <strong>Certificado CFTV</strong>
+            <small style="display: block; color: var(--muted); margin-top: 6px;">Clique para ampliar</small>
+          </button>
+          <button class="hero-panel" type="button" data-certificate="slide03.jpg" data-title="Certificação Técnica 02" style="text-align: left; cursor: pointer;">
+            <strong>Certificado Redes</strong>
+            <small style="display: block; color: var(--muted); margin-top: 6px;">Clique para ampliar</small>
+          </button>
+          <button class="hero-panel" type="button" data-certificate="slide04.jpg" data-title="Certificação Técnica 03" style="text-align: left; cursor: pointer;">
+            <strong>Certificado Segurança</strong>
+            <small style="display: block; color: var(--muted); margin-top: 6px;">Clique para ampliar</small>
+          </button>
+          <button class="hero-panel" type="button" data-certificate="slide05.jpg" data-title="Certificação Técnica 04" style="text-align: left; cursor: pointer;">
+            <strong>Certificado Automação</strong>
+            <small style="display: block; color: var(--muted); margin-top: 6px;">Clique para ampliar</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="hero-panel" style="max-width: 680px; margin: 0 auto;">
+          <span class="eyebrow">Contato Direto</span>
+          <h2>Envie uma mensagem</h2>
+          <form class="quote-form" id="quote-form" style="display: grid; gap: 16px; margin-top: 24px;">
+            <div>
+              <label for="nome" style="display: block; margin-bottom: 6px; font-weight: 700;">Seu Nome:</label>
+              <input type="text" id="nome" name="nome" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;" />
+            </div>
+            <div>
+              <label for="servico" style="display: block; margin-bottom: 6px; font-weight: 700;">Serviço Desejado:</label>
+              <select id="servico" name="servico" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;">
+                <option value="Geral">Orçamento Geral</option>
+                <option value="CFTV">CFTV / Câmeras</option>
+                <option value="Redes">Redes & Wi-Fi</option>
+                <option value="Informática">Informática</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensagem" style="display: block; margin-bottom: 6px; font-weight: 700;">Detalhes da Solicitação:</label>
+              <textarea id="mensagem" name="mensagem" rows="4" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top: 1px solid var(--line); padding: 32px 0; margin-top: 64px; text-align: center; color: var(--muted);">
+    <div class="container">
+      <strong style="color: var(--text); letter-spacing: 0.1em;">TECHFIX</strong> — Soluções Residenciais e Comerciais
+      <p style="margin-top: 8px; font-size: 14px;">© <span id="year">2026</span> Techfix • Florianópolis/SC</p>
+    </div>
+  </footer>
+
+  <dialog id="certificate-modal" style="padding: 0; border: 1px solid var(--line); border-radius: 20px; background: #06111f; color: #fff; max-width: 90vw; max-height: 90vh;">
+    <div style="padding: 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line);">
+      <strong id="certificate-title">Certificado</strong>
+      <button class="modal-close" type="button" style="background: none; border: none; color: #fff; font-size: 24px; cursor: pointer;">&times;</button>
+    </div>
+    <div style="padding: 16px; text-align: center;">
+      <img id="certificate-image" src="" alt="Certificado" style="max-height: 70vh; margin: 0 auto; border-radius: 12px;" />
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
