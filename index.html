@@ -14,6 +14,9 @@
   <meta property="og:url" content="https://buschjr-tecfix.github.io/techfix/" />
   <meta property="og:image" content="https://buschjr-tecfix.github.io/techfix/Logo%20Techfix.png" />
   
+  <!-- Font Awesome para os Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -92,26 +95,61 @@
       </div>
     </section>
 
-    <section class="section" id="servicos">
+    <section class="section servicos-container" id="servicos">
       <div class="container">
         <span class="eyebrow">Especialidades</span>
-        <h2>Serviços Prestados</h2>
-        <div class="service-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
-          <div class="hero-panel">
-            <h3>CFTV & Monitoramento</h3>
-            <p>Projetos de segurança eletrônica com câmeras IP e analógicas HD. Acompanhe em tempo real pelo celular.</p>
-            <a class="btn btn-secondary btn-full" href="#contato" data-service="CFTV">Solicitar Orçamento</a>
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">💻</div>
+            <h3>Manutenção de Computadores e Notebooks</h3>
+            <p>Manutenção preventiva e corretiva, otimização de sistema, SSD e suporte técnico especializado para residências e empresas.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Manutenção de PCs e Notebooks" style="margin-top: 16px;">Solicitar Orçamento</a>
           </div>
-          <div class="hero-panel">
-            <h3>Redes & Conectividade</h3>
-            <p>Instalação de pontos de rede, organização de racks, roteadores de alta performance e redes Mesh.</p>
-            <a class="btn btn-secondary btn-full" href="#contato" data-service="Redes">Solicitar Orçamento</a>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">🖥️</div>
+            <h3>Montagem de PC Gamer</h3>
+            <p>Montagem personalizada e sob medida com seleção de componentes de alto desempenho e melhor refrigeração.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Montagem de PC Gamer" style="margin-top: 16px;">Solicitar Orçamento</a>
           </div>
-          <div class="hero-panel">
-            <h3>Informática & Hardware</h3>
-            <p>Diagnóstico de problemas, montagem, limpeza interna, troca de componentes e otimização de sistemas.</p>
-            <a class="btn btn-secondary btn-full" href="#contato" data-service="Informática">Solicitar Orçamento</a>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">📹</div>
+            <h3>Instalação de Câmeras e CFTV</h3>
+            <p>Projetos residenciais e comerciais de segurança com monitoramento ao vivo no celular e equipamentos de alta definição.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Câmeras e CFTV" style="margin-top: 16px;">Solicitar Orçamento</a>
           </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">🌐</div>
+            <h3>Redes, Wi-Fi e Cabeamento Estruturado</h3>
+            <p>Cabeamento estruturado organizado, extensão de cobertura Wi-Fi de alta estabilidade para ambientes residenciais e corporativos.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Redes, Wi-Fi e Cabeamento" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">💡</div>
+            <h3>Automação Residencial</h3>
+            <p>Criação de rotinas e cenas, controle de iluminação por voz/celular e integração completa Wi-Fi com lâmpadas inteligentes.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Automação Residencial" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">🚀</div>
+            <h3>Presença Digital para Empresas</h3>
+            <p>Organização de perfil no Google Meu Negócio, WhatsApp, Facebook e Instagram para pequenas empresas em Florianópolis e São José.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Presença Digital para Empresas" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
+          <div class="servico-card hero-panel">
+            <div class="icon" style="font-size: 2rem; margin-bottom: 12px;">☁️</div>
+            <h3>Consultoria Cloud & DevOps</h3>
+            <p>Automação, infraestrutura como código (IaC), CI/CD, monitoramento e escalabilidade para ambientes AWS, Azure e GCP.</p>
+            <a class="btn btn-secondary btn-full" href="#contato" data-service="Consultoria Cloud & DevOps" style="margin-top: 16px;">Solicitar Orçamento</a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -129,10 +167,14 @@
             <div>
               <label for="servico" style="display: block; margin-bottom: 6px; font-weight: 700;">Serviço Desejado:</label>
               <select id="servico" name="servico" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: #fff;">
-                <option value="Geral">Orçamento Geral</option>
-                <option value="CFTV">CFTV / Câmeras</option>
-                <option value="Redes">Redes & Wi-Fi</option>
-                <option value="Informática">Informática</option>
+                <option value="Orçamento Geral">Orçamento Geral</option>
+                <option value="Manutenção de PCs e Notebooks">Manutenção de PCs e Notebooks</option>
+                <option value="Montagem de PC Gamer">Montagem de PC Gamer</option>
+                <option value="Câmeras e CFTV">Câmeras e CFTV</option>
+                <option value="Redes, Wi-Fi e Cabeamento">Redes, Wi-Fi e Cabeamento</option>
+                <option value="Automação Residencial">Automação Residencial</option>
+                <option value="Presença Digital para Empresas">Presença Digital para Empresas</option>
+                <option value="Consultoria Cloud & DevOps">Consultoria Cloud & DevOps</option>
               </select>
             </div>
             <div>
@@ -146,10 +188,131 @@
     </section>
   </main>
 
-  <footer style="border-top: 1px solid var(--line); padding: 32px 0; margin-top: 64px; text-align: center; color: var(--muted);">
-    <div class="container">
-      <strong style="color: var(--text); letter-spacing: 0.1em;">TECHFIX</strong> — Soluções Residenciais e Comerciais
-      <p style="margin-top: 8px; font-size: 14px;">© <span id="year">2026</span> Techfix • Florianópolis/SC</p>
+  <footer class="footer" style="border-top: 1px solid var(--line); padding: 48px 0 24px; margin-top: 64px; background: var(--bg2);">
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px;">
+      
+      <div class="footer-info" style="max-width: 360px;">
+        <h3 style="margin-bottom: 12px; color: #fff;">TechFix Tecnologia e Segurança</h3>
+        <p style="color: var(--muted);">Soluções residenciais e comerciais em TI, infraestrutura, automação e presença digital com atendimento local em Florianópolis/SC.</p>
+        <p class="email-contacto" style="margin-top: 16px; color: #fff;">
+          📧 Email: <a href="mailto:contatotechfix01@gmail.com" style="color: #4da6ff; text-decoration: none;">contatotechfix01@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="redes-sociais-container">
+        <h3 style="margin-bottom: 16px; color: #fff;">Conecte-se conosco</h3>
+        
+        <div class="social-grid">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/techfixtecnologiaeseguranca/" target="_blank" rel="noopener noreferrer" class="social-card">
+            <div class="icon-wrapper facebook">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <span class="social-label">Facebook</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/techfixtecnologiaeseguranca/" target="_blank" rel="noopener noreferrer" class="social-card">
+            <div class="icon-wrapper instagram">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <span class="social-label">Instagram</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/techfix-solu%C3%A7%C3%B5es-residenciais/" target="_blank" rel="noopener noreferrer" class="social-card">
+            <div class="icon-wrapper linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <span class="social-label">LinkedIn</span>
+          </a>
+
+          <!-- Google Meu Negócio -->
+          <a href="https://share.google/Y1uKGI3HIM1fmixYA" target="_blank" rel="noopener noreferrer" class="social-card">
+            <div class="icon-wrapper google">
+              <i class="fab fa-google"></i>
+            </div>
+            <span class="social-label">Google</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <style>
+      .redes-sociais-container {
+        font-family: inherit;
+      }
+
+      /* Grid dos Cards */
+      .social-grid {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      /* Card Escuro Estilo App */
+      .social-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 88px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        text-decoration: none;
+        transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .social-card:hover {
+        transform: translateY(-3px);
+        background-color: rgba(255, 255, 255, 0.12);
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+
+      /* Círculo do Ícone com Borda Fina */
+      .icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        font-size: 17px;
+        margin-bottom: 6px;
+      }
+
+      /* Cores Padrão das Marcas */
+      .icon-wrapper.facebook {
+        background-color: #1877f2;
+      }
+
+      .icon-wrapper.instagram {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aebe6 90%);
+      }
+
+      .icon-wrapper.linkedin {
+        background-color: #0077b5;
+      }
+
+      .icon-wrapper.google {
+        background-color: #4285f4;
+      }
+
+      /* Rótulo de texto */
+      .social-label {
+        color: #d0d5dd;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    </style>
+
+    <div class="footer-bottom" style="text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px;">
+      <p>© <span id="year">2026</span> TechFix Tecnologia e Segurança. Todos os direitos reservados.</p>
     </div>
   </footer>
 
